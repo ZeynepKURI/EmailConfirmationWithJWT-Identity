@@ -1,29 +1,23 @@
 ﻿<Properties StartupConfiguration="{1797055F-F660-4062-A2B0-677BB2A28E81}|https">
-  <MonoDevelop.Ide.ItemProperties.Infrastructure.Persistence FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Persistence/Context/AppDbContext.cs">
     <Files>
-      <File FileName="Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" Line="1" Column="1" />
-      <File FileName="Infrastructure/Persistence/Context/AppDbContext.cs" Line="1" Column="1" />
+      <File FileName="Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" />
+      <File FileName="Infrastructure/Persistence/Context/AppDbContext.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EmailConfirmationWithJWT&amp;Identity" expanded="True">
-            <Node name="Core" expanded="True">
-              <Node name="Domain" expanded="True" />
-            </Node>
+          <Node name="EmailConfirmationWithJWT&amp;Identity" selected="True">
+            <Node name="Core" expanded="True" />
+            <Node name="Infrastructure" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Presentation.API FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Core.Domain FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Core.Application FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Presentation.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
