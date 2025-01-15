@@ -1,0 +1,12 @@
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/bin/Debug/net7.0/Persistence.deps.json
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/bin/Debug/net7.0/Persistence.dll
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/bin/Debug/net7.0/Persistence.pdb
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.csproj.AssemblyReference.cache
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.AssemblyInfoInputs.cache
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.AssemblyInfo.cs
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.csproj.CoreCompileInputs.cache
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.dll
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/refint/Persistence.dll
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.pdb
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/ref/Persistence.dll
