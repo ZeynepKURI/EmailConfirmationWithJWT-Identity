@@ -10,12 +10,12 @@ namespace Persistence.DependencyInjection
     {
         public static IServiceCollection InfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            // Add DbContext with Npgsql (PostgreSQL) connection
+            // PostgreSQL bağlantı dizesini appsettings.json'dan alıyoruz
+            var connectionString = configuration.GetConnectionString("Default");
+
+            // DbContext ile Npgsql bağlantısını ekliyoruz
             services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(
-                    configuration.GetConnectionString("Default"), // Connection string is taken from the configuration
-                    npgsqlOptions => npgsqlOptions.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName) // Ensure the migrations are in the correct assembly
-                ), ServiceLifetime.Scoped);
+                options.UseNpgsql(connectionString));
 
             return services;
         }

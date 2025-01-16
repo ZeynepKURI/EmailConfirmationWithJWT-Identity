@@ -1,4 +1,5 @@
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/bin/Debug/net7.0/Application.deps.json
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/bin/Debug/net7.0/Application.runtimeconfig.json
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/bin/Debug/net7.0/Application.dll
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/bin/Debug/net7.0/Application.pdb
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache
@@ -9,4 +10,6 @@
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/obj/Debug/net7.0/Application.dll
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/obj/Debug/net7.0/refint/Application.dll
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/obj/Debug/net7.0/Application.pdb
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/obj/Debug/net7.0/Application.genruntimeconfig.cache
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/obj/Debug/net7.0/ref/Application.dll
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/obj/Debug/net7.0/Application.sourcelink.json

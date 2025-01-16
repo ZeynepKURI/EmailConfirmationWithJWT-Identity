@@ -1,4 +1,4 @@
-namespace API;
+﻿namespace Api;
 
 public class WeatherForecast
 {
@@ -10,3 +10,4 @@ public class WeatherForecast
 
     public string? Summary { get; set; }
 }
+
