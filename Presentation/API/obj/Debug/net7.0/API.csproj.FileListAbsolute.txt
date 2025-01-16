@@ -49,10 +49,9 @@
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/staticwebassets.build.json
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/staticwebassets.development.json
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/scopedcss/bundle/Api.styles.css
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/Api.csproj.CopyComplete
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/Api.dll
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/refint/Api.dll
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/Api.pdb
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/Api.genruntimeconfig.cache
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/ref/Api.dll
-/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/Api.sourcelink.json
-/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Presentation/Api/obj/Debug/net7.0/Api.csproj.Up2Date

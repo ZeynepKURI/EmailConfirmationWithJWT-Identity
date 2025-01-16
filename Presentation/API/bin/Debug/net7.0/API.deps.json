@@ -389,10 +389,7 @@
           "Microsoft.Extensions.DependencyInjection": "7.0.0"
         },
         "runtime": {
-          "Application.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Application.dll": {}
         }
       },
       "Persistence/1.0.0": {
@@ -405,10 +402,7 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0"
         },
         "runtime": {
-          "Persistence.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Persistence.dll": {}
         }
       }
     }
