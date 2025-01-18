@@ -1,42 +1,20 @@
 ﻿<Properties StartupConfiguration="{1ED8B38B-1F75-44B7-BB63-8380E8A5138D}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Api/Program.cs">
-    <Files>
-      <File FileName="Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" />
-      <File FileName="Infrastructure/Persistence/Context/AppDbContext.cs" />
-      <File FileName="Presentation/Api/appsettings.json" />
-      <File FileName="Presentation/Api/appsettings.Development.json" />
-      <File FileName="Presentation/Api/Program.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EmailConfirmationWithJWT&amp;Identity" expanded="True" selected="True">
-            <Node name="Core" expanded="True" />
-            <Node name="Infrastructure" expanded="True">
-              <Node name="Persistence">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
-                <Node name="DependencyInjection" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Presentation" expanded="True">
-              <Node name="Api">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="EmailConfirmationWithJWT&amp;Identity" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&amp;Identity/Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" relfile="Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" line="12" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Presentation.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
