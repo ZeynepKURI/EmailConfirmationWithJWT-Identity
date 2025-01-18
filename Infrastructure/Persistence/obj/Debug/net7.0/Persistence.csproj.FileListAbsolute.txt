@@ -9,9 +9,10 @@
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.AssemblyInfoInputs.cache
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.AssemblyInfo.cs
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.csproj.CoreCompileInputs.cache
-/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.csproj.CopyComplete
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.dll
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/refint/Persistence.dll
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.pdb
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.genruntimeconfig.cache
 /Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/ref/Persistence.dll
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persistence.sourcelink.json
+/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Infrastructure/Persistence/obj/Debug/net7.0/Persiste.61C28332.Up2Date
