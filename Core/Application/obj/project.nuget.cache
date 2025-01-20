@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "08fF1W/7lLo=",
+  "dgSpecHash": "KgyC+iyIJVQzCRtJu54R7s9lttqCQWAW7sMoYHW0+PcbMQ08yk4swp8xEhOxzCvGLVRHP3a7ezD7iNKfV3ZMLw==",
   "success": true,
   "projectFilePath": "/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&Identity/Core/Application/Application.csproj",
   "expectedPackageFiles": [
@@ -24,9 +24,7 @@
     "/Users/zeynepkuri/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/zeynepkuri/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/zeynepkuri/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/zeynepkuri/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
-    "/Users/zeynepkuri/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/zeynepkuri/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+    "/Users/zeynepkuri/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
