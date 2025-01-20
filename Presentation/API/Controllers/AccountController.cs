@@ -36,12 +36,27 @@ namespace Api.Controllers
         }
 
 
-        [HttpPost("register/{email}/{passeord}")]
+        [HttpPost("register/{email}/{password}")]
         public async Task <IActionResult> Register(string email, string password)
         {
             try
             {
                 var user = await _authService.RegisterAsync(email, password);
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        [HttpPost("confirmation/{email}/{code:int}")]
+        public async Task<IActionResult> ConfirmationAsync(string email, int code)
+        {
+            try
+            {
+                var user = await _authService.Confirmation(email, code);
                 return Ok(user);
             }
             catch (Exception ex)
