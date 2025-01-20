@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Data;
 using System.IdentityModel.Tokens.Jwt;
-using System.Net;
 using System.Security.Claims;
 using System.Text;
 using Application.DTOs;
 using MailKit.Net.Smtp;
-using MailKit.Security;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
