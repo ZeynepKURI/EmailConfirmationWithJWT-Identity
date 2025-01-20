@@ -1,44 +1,36 @@
 ﻿<Properties StartupConfiguration="{1ED8B38B-1F75-44B7-BB63-8380E8A5138D}|https">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Presentation.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/zeynepkuri/Projects/EmailConfirmationWithJWT&amp;Identity/Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" relfile="Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" line="17" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Presentation.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Persistence/Service/AuthService.cs">
     <Files>
-      <File FileName="Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" Line="6" Column="48" />
-      <File FileName="Infrastructure/Persistence/Repository/IAuthService.cs" Line="14" Column="1" />
-      <File FileName="Infrastructure/Persistence/Service/AuthService.cs" Line="50" Column="1" />
+      <File FileName="Infrastructure/Persistence/Service/AuthService.cs" Line="86" Column="52" />
+      <File FileName="Core/Application/DTOs/LoginResponse.cs" Line="4" Column="81" />
+      <File FileName="Core/Application/DTOs/RegisterResponse.cs" Line="8" Column="1" />
+      <File FileName="Infrastructure/Persistence/DependencyInjection/ServiceContainer.cs" Line="28" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EmailConfirmationWithJWT&amp;Identity" selected="True">
-            <Node name="Infrastructure">
-              <Node name="Persistence" expanded="True">
-                <Node name="Context" expanded="True" />
-                <Node name="DependencyInjection" expanded="True" />
-                <Node name="Repository" expanded="True" />
-                <Node name="Service" expanded="True" />
+            <Node name="Core">
+              <Node name="Application">
+                <Node name="DTOs" expanded="True" />
               </Node>
             </Node>
-            <Node name="Presentation">
-              <Node name="Api">
-                <Node name="Controllers" expanded="True" />
+            <Node name="Infrastructure">
+              <Node name="Persistence">
+                <Node name="DependencyInjection" expanded="True" />
+                <Node name="Service" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="EmailConfirmationWithJWT&amp;Identity" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>
