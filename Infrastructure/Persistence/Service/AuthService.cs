@@ -73,8 +73,8 @@ namespace Persistence.Service
             string message = emailMessage.ToString();
 
             var _email= new MimeMessage();
-			_email.To.Add(MailboxAddress.Parse("mathilde.muller@ethereal.email"));
-          _email.From.Add(MailboxAddress.Parse("mathilde.muller@ethereal.email"));
+			_email.To.Add(MailboxAddress.Parse("emma1@ethereal.email"));
+          _email.From.Add(MailboxAddress.Parse("emma1@ethereal.email"));
            _email.Subject = "Email Verification";
 			_email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = message };
 
@@ -85,7 +85,7 @@ namespace Persistence.Service
             smtp.Connect("smtp.ethereal.email",587, MailKit.Security.SecureSocketOptions.StartTls);
 
             // E-posta adresinizi ve şifrenizi girerek kimlik doğrulaması yapıyoruz
-            smtp.Authenticate("mathilde.muller@ethereal.email", "9Kpre5n6gNdqHe7FFB");
+            smtp.Authenticate("emma1@ethereal.email", "\tak3t3U7ujpJaaShHe9");
             // E-postayı gönderiyoruz
             smtp.Send(_email);
 

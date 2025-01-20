@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Persistence.Context;
 using Microsoft.AspNetCore.Identity;
+using Persistence.Service;
 
 namespace Persistence.DependencyInjection
 {
@@ -21,42 +22,44 @@ namespace Persistence.DependencyInjection
             services.AddDbContext<AppDbContext>(options =>
                 options.UseNpgsql(connectionString));
 
-
-
-
+            // JWT authentication yapılandırması
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(options =>
+            })
+            .AddJwtBearer(options =>
             {
-                byte[] key = Encoding.ASCII.GetBytes("Qw12ER34TY56Ui78oi98v2bNh78JK4Hods7uUj12");
+                // JWT anahtarını appsettings.json'dan alıyoruz
+                var secretKey = configuration["Jwt:SecretKey"];
+                var key = Encoding.ASCII.GetBytes(secretKey);
+
                 options.SaveToken = true;
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateIssuer = false,
-                    ValidateAudience = false,
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
                     ValidateIssuerSigningKey = true,
-                    ValidateLifetime = false,
+                    ValidateLifetime = true,
                     ValidIssuer = configuration["Jwt:Issuer"],
                     ValidAudience = configuration["Jwt:Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(key),
-                      
                 };
             });
 
-
-
+            // Identity yapılandırması
             services.AddDefaultIdentity<IdentityUser>(options =>
             {
                 options.SignIn.RequireConfirmedEmail = true;
                 options.Tokens.EmailConfirmationTokenProvider = TokenOptions.DefaultAuthenticatorProvider;
+            })
+            .AddEntityFrameworkStores<AppDbContext>();
 
+            // AuthService'i DI konteynerine kaydediyoruz
+            services.AddScoped<IAuthService, AuthService>();
 
-            }).AddEntityFrameworkStores<AppDbContext>();
             return services;
         }
     }
-
 }

@@ -10,10 +10,10 @@ namespace Api.Controllers
 {
     public class AccountController : ControllerBase
     {
-        private readonly AuthService _authService;
+        private readonly IAuthService _authService;
      
 
-        public AccountController ( AuthService authService, IConfiguration configuration)
+        public AccountController ( IAuthService authService, IConfiguration configuration)
         {
           
             _authService = authService;
