@@ -1,10 +1,16 @@
 ﻿using System;
+using System.Data;
+using System.IdentityModel.Tokens.Jwt;
+using System.Net;
+using System.Security.Claims;
 using System.Text;
 using Application.DTOs;
 using MailKit.Net.Smtp;
 using MailKit.Security;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using MimeKit;
 
 namespace Persistence.Service
@@ -132,12 +138,30 @@ namespace Persistence.Service
 
         }
 
-        private string GenerateToken(IdentityUser user)
+        private string GenerateToken(IdentityUser? user)
         {
-            throw new NotImplementedException();
+            byte [] key = Encoding.ASCII.GetBytes("Qw12ER34TY56Ui78oi98v2bNh78JK4Hods7uUj12");
+            var securityKey = new SymmetricSecurityKey(key);
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user!.Id),
+                new Claim(JwtRegisteredClaimNames.Email, user!.Email!)
+
+            };
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.Now.AddDays(5),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public async Task<IdentityUser?> GetUser(string email)
+       private async Task<IdentityUser?> GetUser(string email)
 		{
 
 			return await _userManager.FindByEmailAsync(email);
