@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using Application.DTOs;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
@@ -111,19 +112,30 @@ namespace Persistence.Service
         }
 
 
+        public async Task<LoginResponse> Login(string email , string password)
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+                return new LoginResponse ( false, "Invalid email or password." );
+
+
+            var user = await GetUser(email);
+
+
+            bool isEmailConfirmed = await _userManager.IsEmailConfirmedAsync(user);
+            if (!isEmailConfirmed)
+                return new LoginResponse(false, "You need to confirm your email before logging in.");
+
+            string token = GenerateToken(user);
+            return new LoginResponse(true, token);
 
 
 
+        }
 
-
-
-
-
-
-
-
-
-
+        private string GenerateToken(IdentityUser user)
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task<IdentityUser?> GetUser(string email)
 		{
