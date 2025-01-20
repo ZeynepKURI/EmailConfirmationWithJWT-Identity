@@ -48,7 +48,7 @@ namespace Persistence.Service
             return "EMAİL SEND SUCCESSFULLY";
 		}
 
-        private async Task SendEmail(string email, string emailCode)
+        private async Task<string> SendEmail(string email, string emailCode)
         {
             // HTML mesajını oluşturuyoruz
             StringBuilder emailMessage = new StringBuilder();
@@ -60,12 +60,15 @@ namespace Persistence.Service
             emailMessage.AppendLine("<p>Please enter this code on our website to complete your registration process.</p>");
             emailMessage.AppendLine("<p>If you did not request this, please ignore this email.</p>");
             emailMessage.AppendLine("<br>");
-            emailMessage.AppendLine("<p>Best regards, </p>");
+            emailMessage.AppendLine("<p>Best regards,</p>");
             emailMessage.AppendLine("<p><strong>Netcode-Hub</strong></p>");
             emailMessage.AppendLine("</body>");
             emailMessage.AppendLine("</html>");
 
-			string message = emailMessage.ToString();
+
+
+            string message = emailMessage.ToString();
+
             var _email= new MimeMessage();
 			_email.To.Add(MailboxAddress.Parse(""));
           _email.From.Add(MailboxAddress.Parse(""));
@@ -75,11 +78,53 @@ namespace Persistence.Service
 
             // Send the email via SMTP
             using var smtp = new SmtpClient();
-       
-            smtp.Authenticate("",""); // Authenticate
-           smtp.Send(_email); // Send email
-           smtp.DisconnectAsync(true);
+                // SMTP sunucusunu ve portunu belirtiyoruz
+            smtp.Connect("", MailKit.Security.SecureSocketOptions.StartTls);
+
+            // E-posta adresinizi ve şifrenizi girerek kimlik doğrulaması yapıyoruz
+            smtp.Authenticate("","");
+            // E-postayı gönderiyoruz
+            smtp.Send(_email);
+
+            // Bağlantıyı düzgün bir şekilde sonlandırıyoruz
+            smtp.Disconnect(true);
+
+            return "Thank you for your registration. Kindly check your email for the confirmation code.";
+
         }
+
+
+        public async Task<string> Confirmation(string email , int code)
+        {
+            if (string.IsNullOrEmpty(email) || code <= 0)
+                return "Invalid code provided";
+
+            var User = await GetUser(email);
+            if (User == null)
+                return "Invalid identity provided";
+
+            var result = await _userManager.ConfirmEmailAsync(User, code.ToString());
+            if (!result.Succeeded)
+                return "Invalid code provided";
+            else
+                return "Email cofirmed successfully, yout can proceed to login";
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public async Task<IdentityUser?> GetUser(string email)
 		{
 
