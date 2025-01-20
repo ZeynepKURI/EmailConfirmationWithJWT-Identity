@@ -27,11 +27,11 @@ namespace Persistence.Service
 		}
 
 
-		public async Task<string> RegisterAsync(string email, string password)
+		public async Task<RegisterResponse> RegisterAsync(string email, string password)
 		{
 			var user = await GetUser(email);
 			if (user != null)
-				return "User already exists";
+				return new RegisterResponse(false,"User already exists");
 
 			var result = await _userManager.CreateAsync(new IdentityUser()
 			{
@@ -44,12 +44,12 @@ namespace Persistence.Service
 
 			if (!result.Succeeded)
 
-				return "User registered successfully!";
+				return new RegisterResponse( true, "User registered successfully!");
 
 			var _user = await GetUser(email);
 			var emailCode = await _userManager.GenerateEmailConfirmationTokenAsync(_user);
             await SendEmail(email, emailCode);
-            return "EMAİL SEND SUCCESSFULLY";
+            return new RegisterResponse(true,"EMAİL SEND SUCCESSFULLY");
 		}
 
         private async Task<string> SendEmail(string email, string emailCode)
