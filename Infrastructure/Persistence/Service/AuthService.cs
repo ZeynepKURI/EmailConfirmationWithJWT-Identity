@@ -74,8 +74,8 @@ namespace Persistence.Service
             string message = emailMessage.ToString();
 
             var _email= new MimeMessage();
-			_email.To.Add(MailboxAddress.Parse(""));
-          _email.From.Add(MailboxAddress.Parse(""));
+			_email.To.Add(MailboxAddress.Parse("mathilde.muller@ethereal.email"));
+          _email.From.Add(MailboxAddress.Parse("mathilde.muller@ethereal.email"));
            _email.Subject = "Email Verification";
 			_email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = message };
 
@@ -83,10 +83,10 @@ namespace Persistence.Service
             // Send the email via SMTP
             using var smtp = new SmtpClient();
                 // SMTP sunucusunu ve portunu belirtiyoruz
-            smtp.Connect("", MailKit.Security.SecureSocketOptions.StartTls);
+            smtp.Connect("smtp.ethereal.email",587, MailKit.Security.SecureSocketOptions.StartTls);
 
             // E-posta adresinizi ve şifrenizi girerek kimlik doğrulaması yapıyoruz
-            smtp.Authenticate("","");
+            smtp.Authenticate("mathilde.muller@ethereal.email", "9Kpre5n6gNdqHe7FFB");
             // E-postayı gönderiyoruz
             smtp.Send(_email);
 
@@ -97,7 +97,7 @@ namespace Persistence.Service
 
         }
 
-
+        // Email doğrulama işlemi
         public async Task<string> Confirmation(string email , int code)
         {
             if (string.IsNullOrEmpty(email) || code <= 0)
@@ -114,7 +114,7 @@ namespace Persistence.Service
                 return "Email cofirmed successfully, yout can proceed to login";
         }
 
-
+        // Kullanıcı girişi işlemi
         public async Task<LoginResponse> Login(string email , string password)
         {
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
@@ -134,6 +134,8 @@ namespace Persistence.Service
 
 
         }
+
+        // Token üretme
 
         private string GenerateToken(IdentityUser? user)
         {

@@ -9,7 +9,7 @@ namespace Persistence.Service
 		Task<RegisterResponse> RegisterAsync(string email, string password);
 
 		Task<LoginResponse> Login(string email, string password);
-
+		Task<string> Confirmation(string email, int code);
 	}
 }
 
